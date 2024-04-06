@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Личный кабинет</title>
+    <link rel="stylesheet" href="lk.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Личный кабинет</h1>
+            <a href="notifications_page.html">
+              <div class="notification-icon">
+                <img src="call_1.png" alt="Уведомления">
+              </div>
+              </a>
+        </header>
+        <main>
+            <div class="organization-info">
+                <h2>Positive Technologies</h2>
+                <p>Телефон: 8 (495) 744-01-44 <br>
+                    Адрес: Москва, Преображенская площадь, 8</p>
+            </div>
+            <button class="add-document-btn" onclick="addDocument()">Добавить документ</button>
+            <span class="documents-title">Мои документы</span>
+            <span class="toggle-documents" onclick="toggleDocuments()"> &#9661;</span>
+            <div class="document-list" style="visibility: hidden;">
+                <img src="docs.png" alt="Документ 1">
+                <img src="docs.png" alt="Документ 2">
+                <img src="docs.png" alt="Документ 3">
+                <img src="docs.png" alt="Документ 4">
+                <img src="docs.png" alt="Документ 5">
+                <img src="docs.png" alt="Документ 6">
+                <img src="docs.png" alt="Документ 4">
+                <img src="docs.png" alt="Документ 5">
+                <img src="docs.png" alt="Документ 6">
+            </div>
+        </main>
+        <footer>
+            <nav>
+                <ul>
+                    <li><a href="title_page.html"><img src="news.png" alt="Новости">Новости</a></li>
+                    <li><a href="scan2.html"><img src="scan.jpg" alt="Проверка">Проверка</a></li>
+                    <li><a href="lk.html"><img src="chel.png" alt="Кабинет">Кабинет</a></li>
+                </ul>
+            </nav>
+        </footer>
+    </div>
+    <script>
+        function addDocument() {
+            // Логика добавления документа
+        }
+
+        function toggleDocuments() {
+            var documentList = document.querySelector('.document-list');
+            var toggleButton = document.querySelector('.toggle-documents');
+
+            if (documentList.style.visibility === 'hidden') {
+                documentList.style.visibility = 'visible';
+                toggleButton.innerHTML = '&#10005;'; // Галочка &#10005;, крестик &#10003;;
+            } else {
+                documentList.style.visibility = 'hidden';
+                toggleButton.innerHTML = '&#9661;';
+            }
+        }
+    </script>
+</body>
+</html>

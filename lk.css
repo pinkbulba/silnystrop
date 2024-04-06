@@ -1,0 +1,151 @@
+/* Общие стили */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  color: #333;
+  background-color: #fff;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  
+}
+
+/* Стили для хедера */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  
+}
+
+h1 {
+  font-size: 24px;
+  font-weight: 700;
+  margin-left: 60px;
+  
+}
+
+.notification-icon img {
+  width: 30px;
+  height: 30px;
+}
+a {
+  color: black; /* Черный цвет текста */
+  text-decoration: none; /* Удаление подчеркивания */
+}
+
+/* Стили для новостей */
+.news-item {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  
+}
+
+.news-item h2 {
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+/* Стили для футера */
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #8AFD2F;
+  box-shadow: 0 -2px 6px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+  background-color: #8AFD2F;
+}
+
+/* Стили для личного кабинета */
+
+.profile-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* Распределяем элементы по краям */
+  margin-bottom: 20px;
+}
+
+.profile-header img {
+  max-width: 50px;
+  height: auto;
+  margin-right: 10px;
+}
+
+.organization-info {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.add-document-btn {
+  font-family: raleway;
+  background-color: #8AFD2F;
+  color: black;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 15px;
+  font-size: 16px;
+  cursor: pointer;
+  display: block;
+  margin: 0 auto 20px; /* Центрируем кнопку по горизонтали */
+}
+
+.document-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  visibility: hidden;
+}
+
+.document-list img {
+  max-width: 100%;
+  height: auto;
+}
+
+.toggle-documents {
+  position: fixed; /* фиксируем элемент на странице */
+  right: 20px; /* прижимаем к правому краю страницы с небольшим отступом */
+  margin-top: 0; /* сбрасываем верхний отступ */
+  text-align: right; /* Центрируем текст кнопки по горизонтали */
+  cursor: pointer;
+}
+
+
+
+nav ul li a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+  color: #333;
+}
+
+nav ul li img {
+  width: 30px;
+  height: 30px;
+  margin-bottom: 5px;
+}

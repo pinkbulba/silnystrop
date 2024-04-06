@@ -1,0 +1,119 @@
+/* Общие стили */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.container {
+  max-width: 100%;
+  padding: 0 20px;
+  text-align: center;
+}
+
+/* Стили для хедера */
+header {
+  background-color: #fff;
+  padding: 15px 0;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 70px;
+}
+
+.logo img {
+  max-height: 140px;
+}
+
+.oval {
+  width: 250px;
+  height: 195px;
+  background-color: #8AFD2F;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+nav {
+  margin-top: 20px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+nav ul li {
+  margin: 8px 0;
+}
+
+.register-btn,
+.login-btn {
+  display: inline-block;
+  width: 200px; /* Задаем явный размер ширины */
+  padding: 12px 24px;
+  border-radius: 8px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  text-decoration: none; /* Убираем подчеркивание текста */
+}
+
+.register-btn {
+  background-color: #ddd;
+  color: #333;
+}
+.register-btn:hover {
+  background-color:  #ddd;
+  transform: translateY(-2px);
+}
+
+.login-btn {
+  background-color: #333;
+  color: #fff;
+}
+
+.login-btn:hover {
+  background-color: #555;
+  transform: translateY(-2px);
+}
+
+.support {
+  margin-top: 150px;
+}
+
+.support-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.support-icons img {
+  max-height: 30px;
+  margin: 0 10px;
+}
+
+.support-text {
+  font-weight: 490;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  text-decoration: none;
+}
